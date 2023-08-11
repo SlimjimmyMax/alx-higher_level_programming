@@ -18,13 +18,6 @@ Python, along with many other high-level languages, offers various ways to accom
 
 Similar to how C has its own linter and style guide like Betty, Python has its own set of guidelines known as PEP8 (Python Enhancement Proposals 8). This ensures a consistent and readable style for your code. Keep an eye on maintaining good code practices!
 
-## Getting Started
-
-To get started, you can clone this repository and explore the projects included. Each project will have its own set of instructions and challenges to help you learn and practice Python concepts.
-
-## About the Author
-
-This README was written by Guillaume to welcome you to the world of Python programming. Feel free to reach out and connect!
 
 Enjoy your journey into the Python world!
 
