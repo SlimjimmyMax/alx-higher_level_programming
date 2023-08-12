@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 def remove_char_at(s, n):
-    if s is None or n < 0:
-        return s
-
-    if n >= len(s):
+    if s is None or n < 0 or n >= len(s):
         return s
 
     return s[:n] + s[n+1:]
