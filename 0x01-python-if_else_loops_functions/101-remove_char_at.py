@@ -1,22 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
+#!/usr/bin/python3
+def remove_char_at(s, n):
+    if s is None or n < 0:
+        return s
 
-char *remove_char_at(char *str, int n)
-{
-    if (str == NULL || n < 0)
-        return str;
+    if n >= len(s):
+        return s
 
-    int len = 0;
-    while (str[len] != '\0')
-        len++;
+    return s[:n] + s[n+1:]
 
-    if (n >= len)
-        return str;
+# Test cases
+s1 = "Best School"
+s2 = "Chicago"
+s3 = "C is fun!"
+s4 = "School"
+s5 = "Python"
 
-    for (int i = n; i < len - 1; i++)
-        str[i] = str[i + 1];
-    str[len - 1] = '\0';
-
-    return str;
-}
-
+print(remove_char_at(s1, 3))
+print(remove_char_at(s2, 2))
+print(remove_char_at(s3, 0))
+print(remove_char_at(s4, 10))
+print(remove_char_at(s5, -2))
