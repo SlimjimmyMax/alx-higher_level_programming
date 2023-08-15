@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from add_0 import add as add_funtion
+from add_0 import add as add_function
 
 a = 1
 b = 2
