@@ -1,3 +1,14 @@
 #!/usr/bin/python3
-def new_in_list(my_list, idx, element):
-    return my_list[:] if idx < 0 or idx >= len(my_list) else my_list[:idx] + [element] + my_list[idx + 1:]
+
+def print_matrix_integer(matrix=[[]]):
+    if matrix:
+        for row in matrix:
+            length = len(row)
+
+            for i, col in enumerate(row):
+                if i == length - 1:
+                    print('{:d}'.format(col), end='')
+                else:
+                    print('{:d}'.format(col), end=' ')
+
+            print()
