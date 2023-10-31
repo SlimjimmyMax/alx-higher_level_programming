@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 
 class Square:
-    """
-    This is an empty class representing a square.
-
-    Attributes:
-        None.
-    """
+    """This is an empty Square class."""
     pass
+
