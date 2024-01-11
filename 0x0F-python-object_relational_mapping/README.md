@@ -36,25 +36,26 @@ results = cursor.fetchall()
 # Close the cursor and connection
 cursor.close()
 connection.close()
-How to SELECT Rows in a MySQL Table from a Python Script
+
+## How to SELECT Rows in a MySQL Table from a Python Script
 The example above already demonstrates how to SELECT rows. You just need to replace the SQL query with your specific SELECT statement.
 
 How to INSERT Rows in a MySQL Table from a Python Script
 To INSERT rows, modify the script like this:
 
-# Your SQL INSERT query here
+## Your SQL INSERT query here
 insert_query = "INSERT INTO your_table (column1, column2) VALUES (%s, %s)"
 
-# Data to be inserted
+## Data to be inserted
 data = ("value1", "value2")
 
-# Execute the INSERT query
+## Execute the INSERT query
 cursor.execute(insert_query, data)
 
-# Commit the changes
+## Commit the changes
 connection.commit()
 
-What ORM Means
+## What ORM Means
 ORM stands for Object-Relational Mapping. It's a programming technique that allows for the conversion between different types of data, particularly between a relational database and an object-oriented programming language.
 
 How to Map a Python Class to a MySQL Table
@@ -71,26 +72,26 @@ class YourTable(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50))
 
-# Create an engine
+## Create an engine
 engine = create_engine('mysql+mysqlconnector://your_user:your_password@your_host/your_database')
 
-# Create the table
+## Create the table
 Base.metadata.create_all(engine)
 
-# Create a session
+## Create a session
 Session = sessionmaker(bind=engine)
 session = Session()
 
-# Now you can use the YourTable class as you would a regular Python class to interact with the database
+## Now you can use the YourTable class as you would a regular Python class to interact with the database
 
 How to Create a Python Virtual Environment
 Using the venv module (or virtualenv), you can create a virtual environment:
-# Create a virtual environment
+## Create a virtual environment
 python -m venv venv
 
-# Activate the virtual environment
-# On Windows
+## Activate the virtual environment
+## On Windows
 venv\Scripts\activate
-# On Unix or MacOS
+## On Unix or MacOS
 source venv/bin/activate
 
