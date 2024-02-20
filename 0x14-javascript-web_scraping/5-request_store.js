@@ -24,4 +24,4 @@ request(url, (error, response, body) => {
     }
     console.log(`Data written to ${filePath}`);
   });
-});
+})
